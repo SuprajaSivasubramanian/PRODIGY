@@ -1,0 +1,99 @@
+/* styles.css */
+
+body {
+    font-family: 'Amatic SC', cursive;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    text-align: center;
+    background-color: #333;
+}
+
+.navbar {
+    overflow: hidden;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul li {
+    padding: 14px 20px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    font-size: 24px;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.navbar ul li a:hover {
+    background-color: #575757;
+    color: #fff;
+}
+
+.shop-details {
+    background-color: #444;
+    color: white;
+    padding: 10px 0;
+}
+
+.shop-details h1 {
+    margin: 0;
+    font-size: 48px;
+}
+
+.shop-details p {
+    margin: 0;
+    font-size: 24px;
+}
+
+section {
+    padding: 60px 20px;
+    margin-top: 120px;
+    text-align: center;
+}
+
+#home {
+    height: 100vh;
+    background: url('pet.jpg') no-repeat center center/cover;
+    color: white;
+    padding-top: 100px;
+}
+
+section img {
+    width: 800;
+    height: 423;
+    margin: 20px 0;
+}
+
+.service-item {
+    display: inline-block;
+    width: 45%;
+    margin: 2.5%;
+    vertical-align: top;
+    text-align: left;
+}
+
+.service-item img {
+    max-width: 100%; /* Change this value to adjust the width */
+    height: auto; /* Change this value to adjust the height */
+    margin-bottom: 10px; /* Adjust space between image and text */
+}
+
+/* Change navbar color on scroll */
+.scrolled .navbar {
+    background-color: #222;
+}
